@@ -1,0 +1,129 @@
+h1,h2,h3,h4,h5,h6 {
+	font-family: $font_main,Georgia;
+	color: $text_color;
+	font-weight: 500;
+}
+
+small, .small {
+	font-size: 75%;
+	color: gray;
+}
+
+p, ul li {
+	margin-bottom: 15px;
+  font-family: $font_second;
+  font-weight: $font_weight;
+}
+
+mark {
+  background-color: yellow;
+  color: black;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+ins, u { 
+    text-decoration: underline;
+}
+
+strong { 
+    font-weight: bold;
+}
+
+em { 
+    font-style: italic;
+}
+
+abbr {
+   border-bottom: 1px dotted black;
+}
+
+blockquote {
+  background: #f9f9f9;
+  border-left: 10px solid #29353a;
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote:before {
+  color: #29353a;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+blockquote p {
+  display: inline;
+  color: #29353a;
+}
+
+code {
+  background-color: #29353a;
+  color: white;
+  font-size: 1.3em;
+}
+
+kbd {
+  padding: 0.2em 0.6em;
+  border:2px solid #ccc;
+  background-color:#f7f7f7; 
+  white-space:nowrap;;
+  -moz-border-radius:3px;
+  -webkit-border-radius:3px;
+  border-radius:3px;
+}
+
+pre
+{
+  background-color: #eee;
+}
+
+ul.square {
+  list-style-type: square;
+}
+
+ul.decoration-none{
+  list-style: none;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.align-center {
+  text-align: center;
+}
+
+.align-justify {
+  text-align: justify;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.lowercase {
+  text-transform: lowercase;
+}
+
+.border {
+  border: 2px groove gray;
+}
+
+.active-hover:hover {
+  cursor: crosshair; 
+}
+
+.altern tr:nth-child(odd) {
+  background-color: black;
+  color: white;
+}

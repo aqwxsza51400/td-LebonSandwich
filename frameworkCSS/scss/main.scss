@@ -1,0 +1,17 @@
+/***
+** Framework by Quentin Lesdalons
+***/
+
+//Importation of elements
+@import 'grid';
+@import 'fonts';
+@import 'elements';
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*Gutter width, number of columns*/
+@include grid(2%,12);

@@ -1,0 +1,14 @@
+$font_main : 'roboto';
+$font_second : 'roboto-thin';
+$text_color : black;
+$font_weight : bolder;
+
+@font-face {
+	font-family: $font_main;
+	src: url('fonts/roboto.ttf');
+}
+
+@font-face {
+  font-family: $font_second;
+  src: url('fonts/roboto-thin.ttf');
+}

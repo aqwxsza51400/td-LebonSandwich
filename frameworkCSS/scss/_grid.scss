@@ -1,0 +1,39 @@
+@mixin grid($gutWidth, $colCount) {
+
+	$colWidth : (100% - ($colCount * $gutWidth))/$colCount;
+	$heightspace : $gutWidth/2;
+
+	.row:before, .row:after, .container:before, .container:after{
+		float : none;
+	 	display: table;
+	  	content: " ";
+	}
+
+	.row:after, .container:after {
+		clear: both;
+	}
+
+	.container {
+	}
+
+	@for $i from 1 through $colCount {
+		.col-#{$i} {
+			width : ($colWidth*$i) + (($i - 1) * $gutWidth);
+			float: left;
+			margin-left: $gutWidth/2;
+			margin-right: $gutWidth/2;
+			margin-bottom: $heightspace;
+			margin-top: $heightspace;
+			margin-bottom: $heightspace;
+			background-color: #feca27;
+			height: 75px;
+		}
+	}
+
+	@for $i from 1 to $colCount {
+		.off-#{$i} {
+			margin-left: $i*($colWidth+$gutWidth) + $gutWidth / 2;
+		}
+	}
+	
+}

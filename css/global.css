@@ -1,0 +1,37 @@
+body {
+  display: flex;
+  flex-flow: row wrap; }
+
+header, article, section, nav, aside, footer {
+  border: solid 1px black;
+  padding: 0.25em;
+  margin: 0.25em;
+  border-radius: 0.25em;
+  flex: 1 100%; }
+
+header {
+  order: 0; }
+
+nav {
+  order: 0; }
+
+article {
+  order: 1;
+  flex: 2 0px;
+  min-width: 300px; }
+
+aside {
+  order: 2;
+  flex: 1 auto;
+  min-width: 200px; }
+
+footer {
+  order: 3; }
+
+#compoBlock {
+  display: inline-block; }
+
+#imageCompo {
+  float: left; }
+
+/*# sourceMappingURL=global.css.map */
